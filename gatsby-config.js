@@ -64,6 +64,8 @@ module.exports = {
         // it uses fallback font until the font loads
       }
     },
+
+    `gatsby-plugin-styled-components`,
     
 
     {
