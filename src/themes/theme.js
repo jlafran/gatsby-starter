@@ -1,4 +1,4 @@
-export default{
+export default {
     fonts: {
         main: "Muli, sans-sefif",
         code: "Roboto Mono, monospace"
@@ -11,7 +11,7 @@ export default{
         dark2: "hsl(227,2%,26%)",
         dark3: "hsl(227,2%,64%)",
         light1: "hsl(0,0%,97%)",
-        light1: "hsl(0,0%,99%)",
+        light2: "hsl(0,0%,99%)",
     },
 
     breakpoints: {

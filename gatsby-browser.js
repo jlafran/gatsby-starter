@@ -5,13 +5,25 @@
  */
 
 // You can delete this file if you're not using it
+
+/** this wraps the entire aplicaton with the themes */
+
 import React from "react";
-import { ThemeProvider } from "styled-components";
+import { createGlobalStyle ,ThemeProvider } from "styled-components";
 import Theme from "./src/themes/theme";
 
+const GlobalStyles = createGlobalStyle`
+    * {
+        box-sizing: border;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+`
+
 export const wrapRootElement = ({ element }) => (
-    //this wraps the entire aplicaton with the themes
     <ThemeProvider theme={Theme}>
-        {element} //react aplication
+        <GlobalStyles/>
+        {element}
     </ThemeProvider>
 )
